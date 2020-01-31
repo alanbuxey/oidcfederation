@@ -2,9 +2,14 @@
 
 [![Build Status](https://travis-ci.org/rohe/oidcfederation.svg?branch=master)](https://travis-ci.org/rohe/oidcfederation)
 
-A document that described how to do a multi lateral federation with OpenID Connect.
+A document that describes how to do a multilateral federation with OpenID Connect (OIDC).
 
-A text and html version is automatically generated on each commit:
+Text and HTML versions can be found in the draft directory.
 
-* [oidcfed-05.html](https://storage.googleapis.com/openid-connect/oidcfed-05.html)
-* [oidcfed-05.txt](https://storage.googleapis.com/openid-connect/oidcfed-05.txt)
+## build drafts
+````
+pip install xml2rfc
+
+xml2rfc draft/openid-connect-federation-1_0.xml  -v 3 --text -o draft/openid-connect-federation-1_0.txt
+xml2rfc draft/openid-connect-federation-1_0.xml  -v 3 --html -o draft/openid-connect-federation-1_0.html
+````
